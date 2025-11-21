@@ -61,6 +61,7 @@ export default function NavigationMenuDesktop() {
       <NavigationMenuList className="flex">
         <NavigationMenuItem>
           <NavigationMenuTrigger className="font-Arimo font-bold">Recursos</NavigationMenuTrigger>
+              <div  className="relative top-5">
           <NavigationMenuContent>
             <ul className="flex flex-col w-[200px]">
             
@@ -75,6 +76,7 @@ export default function NavigationMenuDesktop() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
+          </div>
         </NavigationMenuItem>
        
       </NavigationMenuList>

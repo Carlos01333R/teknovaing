@@ -61,6 +61,7 @@ export default function NavigationMenuDesktop() {
       <NavigationMenuList className="flex">
         <NavigationMenuItem>
           <NavigationMenuTrigger className="font-Arimo font-bold">Home</NavigationMenuTrigger>
+              <div  className="relative top-5">
           <NavigationMenuContent>
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -89,22 +90,30 @@ export default function NavigationMenuDesktop() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
+          </div>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="font-Arimo font-bold">Servicios</NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <div  className="relative top-5">
+          <NavigationMenuContent >
+          
             <ul className="grid gap-2 sm:w-[400px] md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component) => (
+             
                 <ListItem
-                  key={component.title}
+                 key={component.title} 
                   title={component.title}
                   href={component.href}
+                  className="top-10"
                 >
                   {component.description}
                 </ListItem>
+              
               ))}
             </ul>
+            
           </NavigationMenuContent>
+            </div>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

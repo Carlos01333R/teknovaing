@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Hero from "@/components/Hero";
 import SectionDesarrollo from "@/components/sectionDesarrollo";
 import SectionRedes from "@/components/sectionRedes";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isScroll, setIsScroll] = useState(false);
@@ -25,11 +26,12 @@ export default function Home() {
 
   
   return (
-    <main className={`transition-all duration-500 ${isScroll ? "bg-[#FAF8F0]" : "bg-white"} h-[3000px] max-w-380 mx-auto`}>
+    <main className={`transition-all duration-500 ${isScroll ? "bg-[#FAF8F0]" : "bg-white"} max-w-380 mx-auto`}>
       <Header />
       <Hero />
       <SectionDesarrollo />
       <SectionRedes />
+      <Footer />
     </main>
   );
 }
